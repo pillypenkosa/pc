@@ -1,0 +1,140 @@
+cmp-win-vga {
+
+} 
+
+
+
+	cmp-win-vga #tableVga {
+		color: lime;
+	} 
+		cmp-win-vga #tableVga thead td {
+			text-align: center;
+			color: #fff;
+		} 
+
+
+		cmp-win-vga #tableVga td {
+			padding: 0px 5px;
+			/*text-align: left;*/
+		} 
+
+		cmp-win-vga #tableVga thead td {
+			padding: 10px 5px;
+			font-weight: bold;
+		} 
+
+		cmp-win-vga #tableVga .model {
+			text-align: left;
+		} 
+			cmp-win-vga #tableVga .model:hover {
+				background-color: #000;
+				color: #fff;
+			} 
+
+			cmp-win-vga #tableVga .model .modelBody .bodyContent {
+				/*margin: 0 0 0 20px;*/
+				padding: 5px 5px 5px 30px;
+				border-radius: 10px;
+				background: var( --bg-r );
+				color: #fff;
+			} 
+				cmp-win-vga #tableVga .model .modelBody .bodyContent .info-title {
+					font-weight: bold;
+				}
+				cmp-win-vga #tableVga .model .modelBody .bodyContent .info-code {
+					margin: 0 0 10px 0;
+				}
+
+
+				cmp-win-vga #tableVga .model .modelBody .bodyContent .info-site {
+					margin: 20px 0 0 0;
+				}
+					cmp-win-vga #tableVga .model .modelBody .bodyContent .info-site a img {
+						position: relative;
+						top: 3px;
+						padding: 2px 5px;
+						border-radius: 5px;
+						/*background: var( --bg-b );*/
+						background: linear-gradient( to bottom, #fff, #aaa );
+					}
+						cmp-win-vga #tableVga .model .modelBody .bodyContent .info-site a img:hover {
+		/*					background: var( --bg-t ); */
+							background: linear-gradient( to top, #fff, #fff );
+						}
+
+
+				cmp-win-vga #tableVga .model .modelBody .bodyContent .info-throughput {
+					margin: 0 0 10px 0;
+				}
+
+					cmp-win-vga #tableVga .model .modelBody .bodyContent .info-throughput .n-throughput{
+						font-weight: bold;
+						color: #ff0;
+					}
+
+
+
+
+
+			cmp-win-vga #tableVga .manufacturer {
+				/*font-weight: bold;*/
+				color: yellow;
+			} 
+
+
+
+		cmp-win-vga #tableVga .code {
+			text-align: left;
+			color: #ccc;
+		} 
+
+		cmp-win-vga #tableVga .ram {
+			color: #ff0;
+		} 
+
+
+		cmp-win-vga #tableVga .site {
+			text-align: left;			
+		} 
+
+
+
+
+
+
+		cmp-win-vga #tableVga .unit {
+			color: #999;
+		} 
+
+		cmp-win-vga #tableVga .gbs {
+			/*font-weight: bold;*/
+			color: #fff;
+		} 
+
+		cmp-win-vga #tableVga .bit {
+			/*font-weight: bold;*/
+			color: #0f0;
+		} 
+
+		cmp-win-vga #tableVga .rate {
+			/*font-weight: bold;*/
+			color: #99c;
+		} 
+
+
+		cmp-win-vga #tableVga .throughput {
+			color: #777;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
