@@ -35,6 +35,8 @@ const dependences = [
 	{ cmp: 'Menu' 					, },
 	{ cmp: 'Header' 				, },
 
+	{ cmp: 'Logo' 					, },
+
 
 
 

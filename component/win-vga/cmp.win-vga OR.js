@@ -65,10 +65,10 @@ class ComponentWinVga {
 			}
 */
 
-				//<td class="manufacturer">${ k.manufacturer }</td>
 			tBody += `<tr data-id="${ k.id }" data-pm="+">
+				<td class="manufacturer">${ k.manufacturer }</td>
 				<td class="model">
-					<div class="modelTitle pointer" onclick="ComponentWinVga.clc( this )"><span class="pm">+</span> ${ k.title }</div>
+					<div class="modelTitle pointer" onclick="ComponentWinVga.clc( this )"><span class="pm">+</span> ${ k.model }</div>
 					<div class="modelBody"></div>
 				</td>
 				<td class="throughput">
@@ -76,22 +76,22 @@ class ComponentWinVga {
 					<span class="bit">${ k.bit }</span> <span class="unit">bit</span> * 
 					<span class="rate">${ k.rate }</span> <span class="unit">MHz</span>
 				</td>
-				<td>${ k.type }</td>
 				<td class="ram">${ k.ram } <span class="unit">GB</span></td>
 			</tr>`;
+			//<td>${ k.type }</td>
 			//<td class="site">${ htmlSite }</td>
 
 		});
 
 					//<td>Сайти</td>
+					//<td>Тип</td>
 
-					//<td>Виробник</td>
 		let htmlTable = `<table id="tableVga">
 			<thead>
 				<tr>
+					<td>Виробник</td>
 					<td>Модель</td>
 					<td>Продуктивність</td>
-					<td>Тип</td>
 					<td>RAM</td>
 				</tr>
 			</thead>
@@ -156,7 +156,7 @@ class ComponentWinVga {
 					htmlSite += `<a href="https://elmir.ua/ua/video_cards/${ obj.site.elmir }" target="_blank" title="www.elmir.ua"><img src="img/pic/favicon_elmir.png"></a> `;
 
 				if ( obj.site.rozetka ) 
-					htmlSite += `<a href="https://hard.rozetka.com.ua/ua/videocards/${ obj.site.rozetka }" target="_blank" title="www.rozetka.com.ua"><img src="img/pic/favicon_rozetka.png"></a> `;
+					htmlSite += `<a href="https://hard.rozetka.com.ua/ua/${ obj.site.rozetka }" target="_blank" title="www.rozetka.com.ua"><img src="img/pic/favicon_rozetka.png"></a> `;
 			
 				if ( obj.site.pcshop ) 
 					htmlSite += `<a href="https://pcshop.ua/ua/komplektuyuschie/videocards/${ obj.site.pcshop }" target="_blank" title="www.pcshop.ua"><img src="img/pic/favicon_pcshop.png"></a> `;
@@ -169,7 +169,9 @@ class ComponentWinVga {
 
 			divModelBody.innerHTML = `<div class="bodyContent">
 				<div class="info-title">
-					${ obj.title ? obj.title : '' } 
+					${ obj.manufacturer ? obj.manufacturer : '' } 
+					${ obj.model ? obj.model : '' } 
+					${ obj.title ? obj.title : '' }
 				</div>
 
 				<div class="info-code">${ obj.code ? obj.code : '' }</div>

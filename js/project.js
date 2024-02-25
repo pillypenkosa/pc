@@ -1,4 +1,4 @@
-const appProjectName = 'DJS';
+const appProjectName = 'DJS PC';
 
 
 const objSymbol = [
@@ -264,7 +264,7 @@ function setMeta( obj = {} ) {
 				obj.description ? obj.description : empty;
 
 
-	document.querySelectorAll( 'head meta[ name="keywords" ]' )[ 0 ].content 			= obj.keywords ? obj.keywords : empty;
+	document.querySelectorAll( 'head meta[ name="keywords" ]' )[ 0 ].content = obj.keywords ? obj.keywords : empty;
 
 	document.querySelectorAll( 'head meta[ property="og:image" ]' )[ 0 ].content =		
 		document.querySelectorAll( 'head meta[ name="twitter:image:src" ]' )[ 0 ].content = 
@@ -272,7 +272,7 @@ function setMeta( obj = {} ) {
 
 
 
-	document.querySelectorAll( 'head meta[ property="og:type" ]' )[ 0 ].content 		= obj.type ? obj.type : empty;
+	document.querySelectorAll( 'head meta[ property="og:type" ]' )[ 0 ].content = obj.type ? obj.type : empty;
 	
 
 

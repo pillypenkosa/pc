@@ -21,8 +21,6 @@ class ComponentFooter {
 
 
 
-
-
 		let tagParam = {
 			//'class' 		: 'active',
 			//'name' 			: 'Any',
@@ -33,7 +31,9 @@ class ComponentFooter {
 			//'defer' 		: '',
 		};
 
-		let html = '© 2024 pillypenkosa@gmail.com';
+		let html = `
+			<div class="copyright">© 2024 pillypenkosa@gmail.com</div>
+		`;
 
 
 
