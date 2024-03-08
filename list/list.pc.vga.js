@@ -288,7 +288,7 @@ const arrListPcVga = [
 	},
 },
 {
-	id: 'geforce_8800_gt', title: 'GeForce 8800 GT',
+	id: 'geforce_8800_gt', title: 'GeForce 8800 GT', // code: 'ZT-88TES3P-FCP',
 	bit: 256, rate: 1800, ram: 0.512, type: 'GDDR-3',
 	site: {
 		elmir: '',
