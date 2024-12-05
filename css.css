@@ -169,8 +169,20 @@ table {
 
 
 
+.unvisible {
+	display: none;
+}
 
 
+
+
+a {
+	text-decoration: none;
+	color: #ff0;
+}
+	a:hover {
+		color: #0f0;
+	}
 
 
 

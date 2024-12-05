@@ -18,8 +18,7 @@ const dependences = [
 	// масиви-списки з ЦЬОГО проекту ( свої ) -------------------------------------------------------------------------------------
 
 	{ arr: 'pc.vga' 			, },
-	
-
+	{ arr: 'pc.my' 				, },
 
 
 
@@ -37,7 +36,7 @@ const dependences = [
 
 	{ cmp: 'Logo' 					, },
 
-
+	{ cmp: 'Spoyler' 				, },
 
 
 
@@ -46,8 +45,14 @@ const dependences = [
 
 	// компоненти-контенти // win-сторiнки ----------------------------------------------------------------------------------------
 	
-	{ cmp: 'Win-Index' 				, regexp: /^index$/ 					, }, 	// regexp - url-маршрут (route) в адресному рядку
+
+
 	{ cmp: 'Win-Vga' 				, regexp: /^vga/ 						, },
+	{ cmp: 'Win-MyPc' 				, regexp: /^my-pc/ 						, },
+
+	{ cmp: 'Win-Index' 				, regexp: /^index$/ 					, }, 	// regexp - url-маршрут (route) в адресному рядку
+	
+
 
 
 

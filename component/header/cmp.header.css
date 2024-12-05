@@ -5,6 +5,7 @@ cmp-header {
 	left: 0;
 	right: 0;
 	background: var( --bg-b );
+	z-index: 1;
 }
 
 	cmp-header .head {

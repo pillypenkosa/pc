@@ -10,14 +10,18 @@ class ComponentWinVga {
  
 	static args = {}; 
  
- 
+		
+ 	static arrSpoylersSelected = [];
+
+
+
  
 	static html( objData = {} ) { 
 		const fooName = this.name + '.html()'; 
  
 		this.args = objData.args ? objData.args : {}; 
  
- 
+ 		this.arrSpoylersSelected = arrListPcVga;
  
 		let tagParam = { 
 			//'class' 		: '', 
@@ -42,77 +46,288 @@ class ComponentWinVga {
 		}); 
  
  
-
-		let tBody = '';
+/*
+		let htmlListSpoylers = '';
 		arrListPcVga.forEach( k => {
 
-			//let htmlGbs = k.bit * k.rate;
-
-			let htmlGbs = this.getThroughput( k.bit, k.rate );
-
-
-			//let htmlGbs = ( k.bit * k.rate * 1000000 ) / ( 8 * 1024 * 1024 * 1024 ) ;
-
-/*
-			let htmlSite = '';
-			if ( k.site ) {
-				if ( k.site.elmir ) 
-					htmlSite += `<a href="https://elmir.ua/ua/${ k.site.elmir }" target="_blank"><img src="img/pic/favicon_elmir.png"></a> `;
-
-				if ( k.site.rozetka ) 
-					htmlSite += `<a href="https://hard.rozetka.com.ua/ua/${ k.site.rozetka }" target="_blank"><img src="img/pic/favicon_rozetka.png"></a> `;
-
-			}
-*/
-
-				//<td class="manufacturer">${ k.manufacturer }</td>
-			tBody += `<tr data-id="${ k.id }" data-pm="+">
-				<td class="model">
-					<div class="modelTitle pointer" onclick="ComponentWinVga.clc( this )"><span class="pm">+</span> ${ k.title }</div>
-					<div class="modelBody"></div>
-				</td>
-				<td class="throughput">
-					<span class="gbs">${ htmlGbs }</span> <span class="unit">GB/s</span> = 
-					<span class="bit">${ k.bit }</span> <span class="unit">bit</span> * 
-					<span class="rate">${ k.rate }</span> <span class="unit">MHz</span>
-				</td>
-				<td>${ k.type }</td>
-				<td class="ram">${ k.ram } <span class="unit">GB</span></td>
-			</tr>`;
-			//<td class="site">${ htmlSite }</td>
+			htmlListSpoylers += `${ Component( 'Spoyler', k ) }`;
 
 		});
+*/
 
-					//<td>Сайти</td>
+		let htmlListSpoylers = this.getHtml( this.arrSpoylersSelected );
 
-					//<td>Виробник</td>
-		let htmlTable = `<table id="tableVga">
-			<thead>
-				<tr>
-					<td>Модель</td>
-					<td>Продуктивність</td>
-					<td>Тип</td>
-					<td>RAM</td>
-				</tr>
-			</thead>
-			<tbody>${ tBody }</tbody>
-		</table>`;
+
+		function compare( a, b ) {
+			if ( a > b ) return -1;
+			if ( a < b ) return 1;
+		}
+
+
+
+
+		let htmlOptionBit = '';
+		if ( arrVGAbit ) {
+
+			let timeCountBit = {};
+
+			//arrVGAbit.sort( compare );
+			arrVGAbit.sort( compare ).forEach( k => {
+
+				if ( !timeCountBit[ k ] ) {
+
+					htmlOptionBit += `<option value="${ k }">${ k } bit</option>`;
+					timeCountBit[ k ] = true;
+				}
+			});
+		}
+
+
+
+		let htmlOptionRate = '';
+		if ( arrVGArate ) {
+
+			let timeCountRate = {};
+
+			//arrVGArate.sort( compare );
+			arrVGArate.sort( compare ).forEach( k => {
+
+				if ( !timeCountRate[ k ] ) {
+
+					htmlOptionRate += `<option value="${ k }">${ k } MHz</option>`;
+					timeCountRate[ k ] = true;
+				}
+			});
+		}
+
+
+
+
+		let htmlOptionRam = '';
+		if ( arrVGAram ) {
+
+			let timeCountRam = {};
+
+
+
+			//arrVGAram.sort(()=>1); // не сортується в цілому виразі ( як вище з іншими масивами )
+
+
+			//arrVGAram.sort( compare );
+			arrVGAram.sort( compare ).forEach( k => {
+
+				if ( !timeCountRam[ k ] ) {
+
+					htmlOptionRam += `<option value="${ k }">${ k } GB</option>`;
+					timeCountRam[ k ] = true;
+				}
+			});
+
+			//console.log( 'arrVGAram: ', arrVGAram );
+			console.log( 'arrVGAram: ', arrVGAram );
+
+
+
+		}
+
+
+
+
+		//console.log( htmlOptionBit );
+
 
 
 		let html = `
-			${ htmlTable }
+			<div class="cp-filters">
+
+				<select data-id="chip" onchange="${ this.name }.change( this )">
+					<option value="all">--- чіп</option>
+					<option value="amd">AMD</option>
+					<option value="nvidia">NVIDIA</option>
+				</select>
+
+				<select data-id="bit" onchange="${ this.name }.change( this )">
+					<option value="all">--- bit</option>
+					${ htmlOptionBit }
+				</select>
+
+				<select data-id="rate" onchange="${ this.name }.change( this )">
+					<option value="all">--- MHz</option>
+					${ htmlOptionRate }
+				</select>
+
+				<select data-id="ram" onchange="${ this.name }.change( this )">
+					<option value="all">--- RAM</option>
+					${ htmlOptionRam }
+
+				</select>
+			</div>
+
+			<div class="list-spoylers">${ htmlListSpoylers }</div>
 			${ Component( 'Logo' ) }
 		`;
-
-
-
-
 
 		return { tagParam, html };  
 	} 
  
  
+
+
+
+
+	static change( elem ) { 	// data - txt 
+		const fooName = this.name + '.change()'; 
  
+		//console.log( 'fooName: ', fooName ); 
+
+		//console.log( elem.dataset.id );
+		//console.log( elem.value );
+
+
+		this.filterKey[ elem.dataset.id ] = elem.value;
+
+		//console.log( this.filterKey );
+
+		this.filter();
+	}
+
+
+ 
+
+
+	static filterKey = {
+
+		chip 	: 'all',
+		bit 	: 'all',
+		rate 	: 'all',
+		ram 	: 'all',
+	};
+
+
+
+
+	static filter( data = '' ) { 	// data - txt 
+		const fooName = this.name + '.filter()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'data: ', data ); 
+
+		let arrSelected = arrListPcVga;
+
+
+		if ( this.filterKey ) {
+
+			if ( this.filterKey.chip != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.chip == this.filterKey.chip ) 
+						return true;
+				});
+			}
+
+
+			if ( this.filterKey.bit != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.bit == this.filterKey.bit ) 
+						return true;
+				});
+			}
+
+
+			if ( this.filterKey.rate != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.rate == this.filterKey.rate ) 
+						return true;
+				});
+			}
+
+
+			if ( this.filterKey.ram != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.ram == this.filterKey.ram ) 
+						return true;
+				});
+			}
+
+			//console.log( 'arrSelected: ', arrSelected ); 
+		}
+
+		//console.log( 'filterKey: ', this.filterKey ); 
+
+
+		//return arrSelected;
+
+
+		this.insertHtmlSpoylers( arrSelected );
+	} 
+ 
+
+
+
+
+	static getHtml( data = [] ) {
+		const fooName = this.name + '.getHtml()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'data: ', data ); 
+
+		let html = '';
+		data.forEach( k => {
+
+			html += `${ Component( 'Spoyler', k ) }`;
+
+		});
+
+		return html;
+	}
+
+
+
+
+
+	static insertHtmlSpoylers( data = [] ) {
+		const fooName = this.name + '.insertHtmlSpoylers()'; 
+ 
+		//console.log( 'fooName: ', fooName ); 
+		//console.log( 'data: ', data ); 
+
+		let html = '';
+		data.forEach( k => {
+
+			html += `${ Component( 'Spoyler', k ) }`;
+
+		});
+
+
+		document.querySelector( 'cmp-win-vga .list-spoylers' ).innerHTML = html;
+
+
+
+		//ratealert();
+
+		//return html;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
 	static clc( elem ) { 
@@ -121,145 +336,9 @@ class ComponentWinVga {
 		//console.log( 'fooName: ', fooName ); 
 		//console.log( 'elem: ', elem ); 
 
-
-		let divParent = elem.closest( 'tr' );
-
-
-		//console.log( 'divParent: ', divParent ); 
-		//console.log( 'divParent-pm: ', divParent.dataset.pm ); 
-		//console.log( 'divParent-id: ', divParent.dataset.id ); 
-
-
-		let obj = objListPcVga[ divParent.dataset.id ] ? objListPcVga[ divParent.dataset.id ] : {};
-		//console.log( 'obj: ', obj ); 
-
-
-		let divModelBody = divParent.querySelector( '.model .modelBody' );
-
-
-		//console.log( 'divModelBody: ', divModelBody ); 
-		
-
-
-		if ( divParent.dataset.pm == '+' ) {
-			divParent.dataset.pm = '-';
-
-
-			divParent.querySelector( '.model .modelTitle .pm' ).innerHTML = '-';
-
-
-
-			let htmlSite = '';
-			if ( obj.site ) {
-
-				if ( obj.site.elmir ) 
-					htmlSite += `<a href="https://elmir.ua/ua/video_cards/${ obj.site.elmir }" target="_blank" title="www.elmir.ua"><img src="img/pic/favicon_elmir.png"></a> `;
-
-				if ( obj.site.rozetka ) 
-					htmlSite += `<a href="https://hard.rozetka.com.ua/ua/videocards/${ obj.site.rozetka }" target="_blank" title="www.rozetka.com.ua"><img src="img/pic/favicon_rozetka.png"></a> `;
-			
-				if ( obj.site.pcshop ) 
-					htmlSite += `<a href="https://pcshop.ua/ua/komplektuyuschie/videocards/${ obj.site.pcshop }" target="_blank" title="www.pcshop.ua"><img src="img/pic/favicon_pcshop.png"></a> `;
-			
-				if ( htmlSite )
-					htmlSite = `<div class="info-site"><span class="unit">магазини:</span> ${ htmlSite }</div>`;
-			}
-
-
-
-			divModelBody.innerHTML = `<div class="bodyContent">
-				<div class="info-title">
-					${ obj.title ? obj.title : '' } 
-				</div>
-
-				<div class="info-code">${ obj.code ? obj.code : '' }</div>
-
-				<div class="info-throughput">
-					<span class="unit">Продуктивність:</span>
-					<span class="n-throughput">${ this.getThroughput( obj.bit, obj.rate ) }</span>
-					<span class="unit">ГБ/с</span>
-				</div>
-
-				<div class="info-memory">Пам\'ять:</div>
-
-				<div class="info-bit">
-					<span class="unit">шина:</span>
-					${ obj.bit ? obj.bit : '?' }
-					<span class="unit">bit</span>
-				</div>
-
-				<div class="info-rate">
-					<span class="unit">частота:</span>
-					${ obj.rate ? obj.rate : '?' }
-					<span class="unit">МГц</span>
-				</div>
-
-				<div class="info-ram">
-					<span class="unit">oб\'єм:</span>
-					${ obj.ram ? obj.ram : '?' } 
-					<span class="unit">Гб</span>
-				</div>
-
-				<div class="info-type">
-					<span class="unit">тип:</span>
-					${ obj.type ? obj.type : '?' }
-				</div>
-
-				${ htmlSite }
-			</div>`;
-		}
-
-		else {
-			divParent.querySelector( '.model .modelTitle .pm' ).innerHTML = '+';
-			divParent.dataset.pm = '+';
-			divModelBody.innerHTML = '';
-		}
 	} 
  
  
- 
-	static getThroughput( bit, rate ) { 	// bit - в бітах, rate - в мегагерцах
-
-		//let kilo = 1000;
-		let kilo = 1024;
-
-
-
-
-
-		//return (( bit / 8 ) * rate ) / 1000;
-
-
-		//return ( 57.6 / 1800 ) * 8 * 1000;
-
-
-		return ( bit * rate ) / 8000;
-
-
-
-
-
-
-
-
-		//return Math.round( ( bit * rate * 1000000 ) / ( 8 * 1024 * 1024 * 1024 ) );
-		//return Math.round( ( bit * rate * 1000000 ) / ( 8 * 1000 * 1000 * 1000 ) );
-
-		//20000 МГц = 20000000 кГц = 20000000000 Гц 
-
-
-		// 					 біт   МГц	  Гц		  Байт	кБайт  МБайт  ГБайт
-		//return Math.round( ( bit * rate * 1000000 ) / ( 8 * kilo * kilo * kilo ) );
-
-
-
-
-
-
-
-	}
-
-
 
 
 

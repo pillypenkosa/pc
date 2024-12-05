@@ -1,0 +1,32 @@
+cmp-win-mypc {
+	color: #fff;
+} 
+
+	cmp-win-mypc .each  {
+		margin: 0 0 50px 0;
+	}
+		cmp-win-mypc .each .title {
+			margin: 0 0 10px 0;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+
+		cmp-win-mypc .each .key {
+			color: #999;
+		}
+
+
+
+		cmp-win-mypc .each .sites {
+			margin: 10px 0 0px 0;
+
+		}
+
+
+
+
+
+
+
+
