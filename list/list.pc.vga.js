@@ -414,27 +414,21 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'riva_tnt_2_ultra', title: 'Riva TNT 2 Ultra', chip: 'nvidia',
 	bit: 128, rate: 183, ram: 0.032, type: 'SDR',
 	site: {
-		elmir: '',
-		rozetka: '',
-		pcshop: '',
+
 	},
 },
 {
 	id: 'riva_tnt_2_pro', title: 'Riva TNT 2 Pro', chip: 'nvidia',
 	bit: 128, rate: 166, ram: 0.032, type: 'SDR',
 	site: {
-		elmir: '',
-		rozetka: '',
-		pcshop: '',
+
 	},
 },
 {
 	id: 'riva_tnt_2', title: 'Riva TNT 2', chip: 'nvidia',
 	bit: 128, rate: 125, ram: 0.032, type: 'SDR',
 	site: {
-		elmir: '',
-		rozetka: '',
-		pcshop: '',
+
 	},
 },
 {

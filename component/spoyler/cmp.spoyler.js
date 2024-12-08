@@ -36,32 +36,17 @@ class ComponentSpoyler {
  
  
 		let htmlTitle = '';
-		let htmlThroughput = '';
+		//let htmlThroughput = '';
 
 		if ( objData ) {
-			if ( objData.title ) {
-
+			if ( objData.title ) 
 				htmlTitle = objData.title;
-			}
-
-
-			if ( objData.bit && objData.rate ) {
-				//htmlThroughput = `<span class="txt-throughput">${ this.getThroughput( objData.bit, objData.rate ) }</span> <span class="key">GB/s</span>`;
-			
-
-				htmlThroughput = `<div class="txt-throughput">${ this.getThroughput( objData.bit, objData.rate ) }</div>`;
-
-				// <span class="key">GB/s</span>
-				//<div class="txt-throughput">${ htmlThroughput }</div>
-
-			}
 		}
 
  
 		let html = `
-			<div class="title" onclick="${ this.name }.clc( this )">
+			<div class="title" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
 				<div class="txt">${ htmlTitle }</div>
-				${ htmlThroughput }
 				<div class="pm" title="Розгорнути / згорнути">+</div>
 			</div>
 			<div class="body"></div>
@@ -69,6 +54,15 @@ class ComponentSpoyler {
 
 		return { tagParam, html };  
 	} 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,16 +76,21 @@ class ComponentSpoyler {
 		let elemParent 		= elem.closest( 'cmp-spoyler' );
 		let id 				= elemParent.dataset.id;
 
+
+		let cmpName 		= elem.dataset.cmp;
+
+		//console.log( 'insert: ', insert );
 		//console.log( 'id: ', id );
 
 		let elemBody 		= document.querySelector( `cmp-spoyler[ data-id="${ id }" ] .body` );
 
-		
 		//console.log( 'elemBody: ', elemBody );
 
-
 		if ( !elemBody.innerHTML ) 
-			elemBody.innerHTML = this.getHtml( id );
+			elemBody.innerHTML = Component( cmpName, id ); 
+			//elemBody.innerHTML = eval( `${ cmpName }.insertHtmlBody( '${ id }' )`  ); // insertHtmlBody() - має бути прописаним у компоненті, назва якого залітає сюди
+		
+			//elemBody.innerHTML = this.getHtml( id );
 		else 
 			elemBody.classList.toggle( 'unvisible' );
 
@@ -106,6 +105,24 @@ class ComponentSpoyler {
 	} 
  
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

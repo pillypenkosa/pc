@@ -1,0 +1,17 @@
+cmp-sites {
+	display: block;
+	margin: 10px 0 0 0;
+} 
+	cmp-sites a {
+		margin: 0 2px;
+		padding: 5px 10px 0 10px;
+		background: linear-gradient( to bottom, rgba( 255, 255, 255, 1 ), rgba( 255, 255, 255, .1 ) );
+		border-radius: 5px;
+	}
+		cmp-sites a:hover {
+			background: linear-gradient( to top, rgba( 255, 255, 255, 1 ), rgba( 255, 255, 255, .1 ) );
+		}
+
+
+
+

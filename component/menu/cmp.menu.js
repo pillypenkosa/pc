@@ -22,6 +22,11 @@ class ComponentMenu {
 		{ title: 'Відеокарти' 		, id: 'vga' 					, href: '?vga'			},
 
 
+		{ title: 'MB,CPU,RAM' 		, id: 'mbcpuram' 				, href: '?mbcpuram'		},
+
+
+
+
 
 
 	];
@@ -71,8 +76,8 @@ class ComponentMenu {
 	static clc( data ) {  
 		const fooName = this.name + '.clc()';
 
-		console.log( 'fooName: ', fooName );
-		console.log( 'data: ', data );
+		//console.log( 'fooName: ', fooName );
+		//console.log( 'data: ', data );
 
 
 		//console.log( 'data-id: ', data.dataset.id );

@@ -124,7 +124,7 @@ class ComponentWinVga {
 			});
 
 			//console.log( 'arrVGAram: ', arrVGAram );
-			console.log( 'arrVGAram: ', arrVGAram );
+			//console.log( 'arrVGAram: ', arrVGAram );
 
 
 
@@ -281,7 +281,14 @@ class ComponentWinVga {
 		let html = '';
 		data.forEach( k => {
 
-			html += `${ Component( 'Spoyler', k ) }`;
+			//html += `${ Component( 'Spoyler', k ) }`;
+
+			html += `${ 
+				Component( 'Spoyler', { 
+					id 		: k.id, 
+					title 	: k.title, 
+					cmp 	: 'Spoyler-Body-Vga', // для вставки в body спойлера
+				})}`;
 
 		});
 
@@ -301,8 +308,13 @@ class ComponentWinVga {
 		let html = '';
 		data.forEach( k => {
 
-			html += `${ Component( 'Spoyler', k ) }`;
-
+			//html += `${ Component( 'Spoyler', k ) }`;
+			html += `${ 
+				Component( 'Spoyler', { 
+					id 		: k.id, 
+					title 	: k.title, 
+					cmp 	: 'Spoyler-Body-Vga', // для вставки в body спойлера
+				})}`;
 		});
 
 

@@ -17,8 +17,10 @@ const dependences = [
 
 	// масиви-списки з ЦЬОГО проекту ( свої ) -------------------------------------------------------------------------------------
 
+	{ arr: 'pc.mbcpuram' 		, },
 	{ arr: 'pc.vga' 			, },
 	{ arr: 'pc.my' 				, },
+
 
 
 
@@ -29,14 +31,25 @@ const dependences = [
 
 
 
-	{ cmp: 'Win-Err404' 			, },
-	{ cmp: 'Footer' 				, },
-	{ cmp: 'Menu' 					, },
-	{ cmp: 'Header' 				, },
+	{ cmp: 'Win-Err404' 				, },
+	{ cmp: 'Footer' 					, },
+	{ cmp: 'Menu' 						, },
+	{ cmp: 'Header' 					, },
 
-	{ cmp: 'Logo' 					, },
+	{ cmp: 'Logo' 						, },
 
-	{ cmp: 'Spoyler' 				, },
+	{ cmp: 'Sites' 						, },
+
+
+
+
+	{ cmp: 'Spoyler-Body-Mbcpuram' 		, },
+	{ cmp: 'Spoyler-Body-Vga' 		, },
+	//{ cmp: 'Spoyler-Title-Mbcpuram' 	, },
+
+
+
+	{ cmp: 'Spoyler' 					, },
 
 
 
@@ -47,11 +60,18 @@ const dependences = [
 	
 
 
+
+
+	{ cmp: 'Win-MbCpuRam' 			, regexp: /^mbcpuram/ 				, },
+
 	{ cmp: 'Win-Vga' 				, regexp: /^vga/ 						, },
 	{ cmp: 'Win-MyPc' 				, regexp: /^my-pc/ 						, },
 
 	{ cmp: 'Win-Index' 				, regexp: /^index$/ 					, }, 	// regexp - url-маршрут (route) в адресному рядку
 	
+
+
+
 
 
 
