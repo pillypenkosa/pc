@@ -9,6 +9,10 @@ class ComponentSpoyler {
  
  
 	static args = {}; 
+
+	static pmClose = '&#9207';
+	//static pmClose = '&#11163';
+	static pmOpen = '&#9204';
  
  
  
@@ -47,7 +51,7 @@ class ComponentSpoyler {
 		let html = `
 			<div class="title" data-cmp="${ objData.cmp }" onclick="${ this.name }.clc( this )">
 				<div class="txt">${ htmlTitle }</div>
-				<div class="pm" title="Розгорнути / згорнути">+</div>
+				<div class="pm" title="Розгорнути / згорнути">${ this.pmClose }</div>
 			</div>
 			<div class="body"></div>
 		`; 
@@ -97,9 +101,9 @@ class ComponentSpoyler {
 
 		let htmlPM = '';
 		if ( elemBody.classList.contains( 'unvisible' ) ) 
-			htmlPM = '+';
+			htmlPM = this.pmClose;
 		else 
-			htmlPM = '-';
+			htmlPM = this.pmOpen;
 
 		elem.querySelector( '.title .pm' ).innerHTML = htmlPM;
 	} 

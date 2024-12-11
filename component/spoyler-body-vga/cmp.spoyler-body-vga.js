@@ -60,7 +60,7 @@ class ComponentSpoylerBodyVga {
 
 					htmlThroughput = `<div class="throughput">
 						<span class="txt-key">продуктивність:</span>
-						<span class="txt-val">${ this.getThroughput( obj.bit, obj.rate ) }</span>
+						<span class="txt-val">${ ComponentWinVga.getThroughput( obj.bit, obj.rate ) }</span>
 						<span class="txt-unit">GB/s</span>
 					</div>`;
 				}
@@ -98,9 +98,11 @@ class ComponentSpoylerBodyVga {
 				let htmlType = '';
 				if ( obj.type ) {
 
+					//let htmlTypeTXT = objTitleIDs[ obj.type ] ? objTitleIDs[ obj.type ] : obj.type;
+
 					htmlType = `<div class="type">
 						<span class="txt-key">тип:</span>
-						${ obj.type }
+						${ objTitleIDs[ obj.type ] ? objTitleIDs[ obj.type ] : obj.type }
 					</div>`;
 				}
 
@@ -139,13 +141,6 @@ class ComponentSpoylerBodyVga {
  
  
  
-
-
-  
-	static getThroughput( bit, rate ) { 	// bit - в бітах, rate - в мегагерцах
-
-		return ( bit * rate ) / 8000;
-	}
 
 
 

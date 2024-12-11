@@ -133,6 +133,33 @@ class ComponentWinVga {
 
 
 
+
+
+
+		let htmlOptionType = '';
+		if ( arrVGAtype ) {
+
+			let timeCountType = {};
+
+			arrVGAtype.sort( compare ).forEach( k => {
+
+				if ( !timeCountType[ k ] ) {
+
+					htmlOptionType += `<option value="${ k }">${ objTitleIDs[ k ] ? objTitleIDs[ k ] : k }</option>`;
+					timeCountType[ k ] = true;
+				}
+			});
+		}
+
+
+
+
+
+
+
+
+
+
 		//console.log( htmlOptionBit );
 
 
@@ -159,8 +186,14 @@ class ComponentWinVga {
 				<select data-id="ram" onchange="${ this.name }.change( this )">
 					<option value="all">--- RAM</option>
 					${ htmlOptionRam }
-
 				</select>
+
+				<select data-id="type" onchange="${ this.name }.change( this )">
+					<option value="all">--- type</option>
+					${ htmlOptionType }
+				</select>
+
+
 			</div>
 
 			<div class="list-spoylers">${ htmlListSpoylers }</div>
@@ -201,6 +234,7 @@ class ComponentWinVga {
 		bit 	: 'all',
 		rate 	: 'all',
 		ram 	: 'all',
+		type 	: 'all',
 	};
 
 
@@ -256,6 +290,30 @@ class ComponentWinVga {
 				});
 			}
 
+
+
+
+			if ( this.filterKey.type != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.type == this.filterKey.type ) 
+						return true;
+				});
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
 			//console.log( 'arrSelected: ', arrSelected ); 
 		}
 
@@ -283,10 +341,18 @@ class ComponentWinVga {
 
 			//html += `${ Component( 'Spoyler', k ) }`;
 
+			
+
+			let throughput = 0;
+			if ( k.bit && k.rate ) 
+				throughput = this.getThroughput( k.bit, k.rate );
+			
+
+
 			html += `${ 
 				Component( 'Spoyler', { 
 					id 		: k.id, 
-					title 	: k.title, 
+					title 	: `${ k.title } <span class="throughput">${ throughput }</span>`, 
 					cmp 	: 'Spoyler-Body-Vga', // для вставки в body спойлера
 				})}`;
 
@@ -304,32 +370,20 @@ class ComponentWinVga {
  
 		//console.log( 'fooName: ', fooName ); 
 		//console.log( 'data: ', data ); 
-
-		let html = '';
-		data.forEach( k => {
-
-			//html += `${ Component( 'Spoyler', k ) }`;
-			html += `${ 
-				Component( 'Spoyler', { 
-					id 		: k.id, 
-					title 	: k.title, 
-					cmp 	: 'Spoyler-Body-Vga', // для вставки в body спойлера
-				})}`;
-		});
-
-
-		document.querySelector( 'cmp-win-vga .list-spoylers' ).innerHTML = html;
-
-
-
-		//ratealert();
-
-		//return html;
+		//let html = this.getHtml( data );
+		document.querySelector( 'cmp-win-vga .list-spoylers' ).innerHTML = this.getHtml( data );
 	}
 
 
 
 
+
+
+  
+	static getThroughput( bit, rate ) { 	// bit - в бітах, rate - в мегагерцах
+
+		return ( bit * rate ) / 8000;
+	}
 
 
 

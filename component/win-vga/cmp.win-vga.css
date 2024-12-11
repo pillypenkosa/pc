@@ -3,19 +3,30 @@ cmp-win-vga {
 
 } 
 	cmp-win-vga .cp-filters {
-		display: flex;
-		margin: 40px 0px 20px 0px;
+		/*display: flex;*/
+		margin: 20px 0px 20px 0px;
+		text-align: center;
 
 	}
 		cmp-win-vga .cp-filters select {
-			display: block;
-			margin: 0px 2px;
+			/*display: block;*/
+			margin: 5px 2px;
 			padding: 1px 2px;
 			border-radius: 5px;
 		}
 
 
 
+
+
+
+	/* для дочернего компонента  */
+	cmp-win-vga cmp-spoyler .title .txt .throughput {
+
+		font-weight: bold;
+		color: #0f0;
+
+	} 
 
 
 
