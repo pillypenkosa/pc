@@ -50,11 +50,10 @@ class ComponentWinMbCpuRam {
 
 				<select data-id="rate_memory" onchange="${ this.name }.change( this )">
 					<option value="all">--- MHz</option>
-
-					<option value="4800">4800</option>
-					<option value="5600">5600</option>
-
+					<option value="_4800">4800</option>
+					<option value="_5600">5600</option>
 				</select>
+
 			</div>
 
 			<div class="list">${ htmlList }</div>
@@ -68,10 +67,15 @@ class ComponentWinMbCpuRam {
  
 	static filterKey = {
 
-		rate_memory: 'all',
+		rate_memory 	: 'all',
 
 	};
  
+
+
+
+	//static arrSelected = arrListPcMbCpuRam;
+
 
 
 
@@ -86,28 +90,28 @@ class ComponentWinMbCpuRam {
 		let val = elem.value;
 
 
-		this.filterKey[ id ] =  val;
+		this.filterKey[ id ] = val;
 
 
+		//console.log( 'val: ', val ); 
 		//console.log( 'this.filterKey: ', this.filterKey ); 
 
 		let arrSelected = arrListPcMbCpuRam;
+
 
 
 		if ( this.filterKey.rate_memory != 'all' ) {
 
 			arrSelected = arrSelected.filter( k => {
 
-				if ( k.rate_memory && k.rate_memory[ '_' + val ] ) 
+				if ( k.rate_memory && k.rate_memory[ this.filterKey.rate_memory ] ) 
 					return true;
-				
 			});
 		}
 
-		//console.log( 'arrSelected: ', arrSelected ); 
 
-		if ( arrSelected.length ) 
-			document.querySelector( 'cmp-win-mbcpuram .list' ).innerHTML = this.getHtml( arrSelected );
+
+		document.querySelector( 'cmp-win-mbcpuram .list' ).innerHTML = this.getHtml( arrSelected );
 	} 
 
 
@@ -125,7 +129,7 @@ class ComponentWinMbCpuRam {
 			html += `${ 
 				Component( 'Spoyler', { 
 					id 		: k.id, 
-					title 	: k.title, 
+					title 	: `<span class="key">${ k.cat }: </span>${ k.title }`, 
 					cmp 	: 'Spoyler-Body-MbCpuRam', // для вставки в body спойлера
 				})}`;
 		});

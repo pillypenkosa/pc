@@ -16,9 +16,7 @@ cmp-spoyler {
 		} 
 
 
-	cmp-spoyler .title {
 
-	}
 		cmp-spoyler .title .txt-rating5 {
 			color: #0f0;
 		}
@@ -26,6 +24,20 @@ cmp-spoyler {
 			/*font-weight: bold;*/
 			color: #ff0;
 		}
+
+		cmp-spoyler .title .key {
+			/*font-weight: bold;*/
+			font-style: oblique;
+			color: #aaa;
+		}
+
+
+
+
+
+
+
+
 
 
 /*

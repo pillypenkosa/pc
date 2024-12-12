@@ -51,7 +51,15 @@ class ComponentSpoylerBodyMbCpuRam {
 
 			let htmlSocket = '';
 			if ( obj.socket )
-				htmlSocket = `<div class="keyval"><span class="key">сокет: </span>${ obj.socket }</div>`;
+				htmlSocket = `<div class="keyval"><span class="key">сокет: </span>${ objPartsCode[ obj.socket ] ? objPartsCode[ obj.socket ].title : obj.socket   }</div>`;
+
+
+			let htmlChipset = '';
+			if ( obj.chipset )
+				htmlChipset = `<div class="keyval"><span class="key">чіпсет: </span>${ objPartsCode[ obj.chipset ] ? objPartsCode[ obj.chipset ].title : obj.chipset   }</div>`;
+
+
+
 
 
 			// код комплектуючої
@@ -72,19 +80,19 @@ class ComponentSpoylerBodyMbCpuRam {
 
 
 			// максимальна частота процесора 
-			let htmlRateMax = '';
-			if ( obj.cpu_rate_max )
-				htmlRateMax = `<div class="keyval"><span class="key">частота: </span>${ obj.cpu_rate_max } ГГц</div>`;
+			let htmlRate = '';
+			if ( obj.cpu_rate )
+				htmlRate = `<div class="keyval"><span class="key">частота: </span>${ obj.cpu_rate } ГГц</div>`;
 
 			// тип пам'яті
 			let htmRamType = '';
 			if ( obj.ram_type ) 
-				htmRamType = `<div class="keyval"><span class="key">RAM type: </span>${ obj.ram_type }</div>`;
+				htmRamType = `<div class="keyval"><span class="key">RAM type: </span>${ objPartsCode[ obj.ram_type ] ? objPartsCode[ obj.ram_type ].title : obj.ram_type }</div>`;
 
 			// максимальний об'єм пам'яті
 			let htmRamVal = '';
-			if ( obj.ram_max )
-				htmRamVal = `<div class="keyval"><span class="key">RAM об'єм: </span>${ obj.ram_max } Гб</div>`;
+			if ( obj.ram_val )
+				htmRamVal = `<div class="keyval"><span class="key">RAM об'єм: </span>${ obj.ram_val } Гб</div>`;
 
 			// кількість слотів пам'яті
 			let htmRamSlot = '';
@@ -127,13 +135,13 @@ class ComponentSpoylerBodyMbCpuRam {
 			// кеш процесора
 			let htmlCache = '';
 			if ( obj.cache1 )
-				htmlCache = obj.cache1;
+				htmlCache = `${ obj.cache1 } MB`;
 
 			if ( obj.cache2 )
-				htmlCache += ' / ' + obj.cache2;
+				htmlCache += ` / ${ obj.cache2 } MB`;
 
 			if ( obj.cache3 )
-				htmlCache += ' / ' + obj.cache3;
+				htmlCache += ` / ${ obj.cache3 } MB`;
 
 			if ( htmlCache )
 				htmlCache = `<div class="keyval"><span class="key">кеш: </span>${ htmlCache }</div>`;
@@ -148,10 +156,6 @@ class ComponentSpoylerBodyMbCpuRam {
 					if ( objPartsCode[ obj.gpu ].title )
 						htmlGpu += objPartsCode[ obj.gpu ].title;
 
-				
-				if ( obj.gpu_rate ) 
-					htmlGpu += ` (${ obj.gpu_rate } МГц)`;
-				
 				htmlGpu = `<div class="keyval"><span class="key">відеоядро: </span>${ htmlGpu }</div>`;
 			}
 
@@ -174,8 +178,11 @@ class ComponentSpoylerBodyMbCpuRam {
 				<div class="obj-cat">${ htmlCat }</div>
 				<div class="obj-title"><span class="key">назва: </span>${ obj.title } ${ htmlCode }</div>
 				${ htmlSocket }
+				${ htmlChipset }
 
-				${ htmlRateMax }
+
+
+				${ htmlRate }
 
 				${ htmlRateMemory }
 
