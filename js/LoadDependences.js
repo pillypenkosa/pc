@@ -21,7 +21,7 @@ class LoadDependences {
 			// массиви-списки сторонніх сайтів
 			if ( k.db ) {
 				let script = document.createElement( 'script' );
-				script.src = `https://pillypenkosa.github.io/database/list/list.${ k.db }.js`;
+				script.src = `https://pillypenkosa.github.io/db/list/list.${ k.db }.js`;
 				script.setAttribute( 'defer', '' );
 				//divList.append( script ); 	// divList = <div id="divList">
 				document.head.append( script );
