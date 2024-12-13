@@ -1,5 +1,7 @@
 const arrPartsCode = [
 
+
+	// відеоядро
 	{ id: 'intel_uhd_graphics_730' 		, title: 'Intel UHD Graphics 730' 		, },
 	{ id: 'intel_uhd_graphics_770' 		, title: 'Intel UHD Graphics 770' 		, },
 

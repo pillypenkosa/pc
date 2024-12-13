@@ -10,9 +10,11 @@ class ComponentSpoyler {
  
 	static args = {}; 
 
-	static pmClose = '&#9207';
+	//static pmClose = '&#9207';
+	static pmClose = '+';
 	//static pmClose = '&#11163';
-	static pmOpen = '&#9204';
+	//static pmOpen = '&#9204';
+	static pmOpen = '-';
  
  
  
