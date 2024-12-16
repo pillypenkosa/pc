@@ -150,7 +150,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'radeon_rx_7900_xtx', title: 'Radeon RX 7900 XTX', chip: 'amd',
 	bit: 384, rate: 20000, ram: 24, type: 'gddr6',
 	site: {
-		elmir 		: 'https://elmir.ua/ua/video_cards/_1AY-6Y6_4Ee-6Q28/?orderby=cost&orderdir=desc',
+		elmir 		: 'https://elmir.ua/ua/video_cards/_1AY-6Y6_4Ee-6Q28/?orderby=cost&orderdir=asc',
 	},
 },
 {
