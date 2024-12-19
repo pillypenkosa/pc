@@ -122,6 +122,9 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 
 
 
+
+
+
 {
 	id: 'geforce_rtx_4090', title: 'GeForce RTX 4090', chip: 'nvidia',
 	bit: 384, rate: 21000, ram: 24, type: 'gddr6x', resolution: '7680x4320 ( 8K )',
@@ -486,6 +489,13 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 		elmir: 'https://elmir.ua/ua/video_cards/_4Ee-5BoR/?orderby=cost&orderdir=asc',
 		rozetka: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-gtx-1650/',
 		pcshop: 'https://pcshop.ua/komplektuyuschie/videocards/graficheskij-chip_1/geforce-gtx-1650_1?sort=p.price&order=ASC',
+	},
+},
+{
+	id: 'geforce_gtx_1060', title: 'GeForce GTX 1060', chip: 'nvidia', 
+	bit: 192, rate: 8000, ram: 6, type: 'gddr5',
+	site: {
+		elmir 		: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GTX1060%206GB%20DDR5',
 	},
 },
 {

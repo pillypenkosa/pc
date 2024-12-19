@@ -45,14 +45,41 @@ class ComponentWinMbCpuRam {
 		let htmlList = this.getHtml( arrListPcMbCpuRam );
 
 	
+
+		let htmlOptionRateMemory = '';
+		if ( arrRateMemory ) {
+			arrRateMemory.forEach( k => {
+				htmlOptionRateMemory += `<option value="_${ k }">${ k }</option>`;
+			});
+		}
+
+
+		let htmlOptionSocket = '';
+		if ( arrSocket ) {
+			arrSocket.forEach( k => {
+				htmlOptionSocket += `<option value="${ k }">${ objPartsCode[ k ].title }</option>`;
+			});
+		}
+
+
+
+
 		let html = `
 			<div class="cp-filters">
 
 				<select data-id="rate_memory" onchange="${ this.name }.change( this )">
 					<option value="all">--- MHz</option>
-					<option value="_4800">4800</option>
-					<option value="_5600">5600</option>
+					${ htmlOptionRateMemory }
 				</select>
+
+
+				<select data-id="socket" onchange="${ this.name }.change( this )">
+					<option value="all">--- Socket</option>
+					${ htmlOptionSocket }
+				</select>
+
+
+
 
 			</div>
 
@@ -68,6 +95,7 @@ class ComponentWinMbCpuRam {
 	static filterKey = {
 
 		rate_memory 	: 'all',
+		socket 			: 'all',
 
 	};
  
@@ -108,6 +136,22 @@ class ComponentWinMbCpuRam {
 					return true;
 			});
 		}
+
+
+
+		if ( this.filterKey.socket != 'all' ) {
+
+			arrSelected = arrSelected.filter( k => {
+
+				if ( k.socket && k.socket == val ) 
+					return true;
+			});
+		}
+
+
+
+
+
 
 
 
