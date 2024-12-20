@@ -20,16 +20,16 @@ s1151
 
 
 	// сокет MB, CPU
-	{ id: 'amd4' 						, title: 'AMD // AM4 PGA 1331' 			, }, // Socket AM4 	// Zen / Zen+ / Zen2 / Zen3
-	{ id: 'amd5' 						, title: 'AMD // AM5 LGA 1718' 			, }, // Socket AM5  // Zen4
+	{ id: 'amd4' 						, title: 'AMD AM4 (1331)' 			, }, // Socket AM4 	// Zen / Zen+ / Zen2 / Zen3
+	{ id: 'amd5' 						, title: 'AMD AM5 (1718)' 			, }, // Socket AM5  // Zen4
 
 
 
-	{ id: 'i1151' 						, title: 'Intel // LGA 1151' 			, }, // Socket H4 	// CoffeeLake
-	{ id: 'i1200' 						, title: 'Intel // LGA 1200' 			, }, // Socket H5 	// CometLake / RocketLake
-	{ id: 'i1700' 						, title: 'Intel // LGA 1700' 			, }, // Socket V 	// AlderLake / RaptorLake
-	{ id: 'i1851' 						, title: 'Intel // LGA 1851' 			, }, // Socket V1 	// ArrowLake
-	{ id: 'i2551' 						, title: 'Intel // LGA 2551' 			, }, // ???
+	{ id: 'i1151' 						, title: 'Intel (1151)' 			, }, // Socket H4 	// CoffeeLake
+	{ id: 'i1200' 						, title: 'Intel (1200)' 			, }, // Socket H5 	// CometLake / RocketLake
+	{ id: 'i1700' 						, title: 'Intel (1700)' 			, }, // Socket V 	// AlderLake / RaptorLake
+	{ id: 'i1851' 						, title: 'Intel (1851)' 			, }, // Socket V1 	// ArrowLake
+	{ id: 'i2551' 						, title: 'Intel (2551)' 			, }, // ???
 
 
 

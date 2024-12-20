@@ -122,9 +122,9 @@ class ComponentWinMbCpuRam {
 
 
 		//console.log( 'val: ', val ); 
-		//console.log( 'this.filterKey: ', this.filterKey ); 
 
 		let arrSelected = arrListPcMbCpuRam;
+		//console.log( 'arrSelected: ', arrSelected ); 
 
 
 
@@ -137,20 +137,14 @@ class ComponentWinMbCpuRam {
 			});
 		}
 
-
-
 		if ( this.filterKey.socket != 'all' ) {
 
 			arrSelected = arrSelected.filter( k => {
 
-				if ( k.socket && k.socket == val ) 
+				if ( k.socket && k.socket == this.filterKey.socket ) 
 					return true;
 			});
 		}
-
-
-
-
 
 
 
