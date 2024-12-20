@@ -1,5 +1,10 @@
-const arrRateMemory = [ 5600, 5200, 4800, 2666, 2400, 2133, 1333 ];
-const arrSocket = [ 'i1851', 'i1700', 'i1200', 'i1151', 'amd5', 'amd4', ];
+//const arrRateMemory = [ 5600, 5200, 4800, 2666, 2400, 2133, 1333 ];
+const arrRateMemory = [ 5600, 5200, 4800, ];
+
+
+
+//const arrSocket = [ 'i1851', 'i1700', 'i1200', 'i1151', 'amd5', 'amd4', ];
+const arrSocket = [ 'i1700', 'amd5', ];
 
 
 
@@ -632,7 +637,7 @@ const arrListPcMbCpuRam = [
 
 
 
-// DDR5 ---
+// DDR5 --- 5600 ---
 {
 	id: 'ddr5_128_5600', title: 'DDR-5 5600 МГц 128 ГБ', cat: 'ram', 
 	ram_type: 'ddr5', rate_memory: { _5600: 1, }, ram_val: 128,
@@ -652,6 +657,13 @@ const arrListPcMbCpuRam = [
 	ram_type: 'ddr5', rate_memory: { _5600: 1, }, ram_val: 64,
 	site: {
 		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-1MoE_6Y-6IiZ_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_48_5600', title: 'DDR-5 5600 МГц 48 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5600: 1, }, ram_val: 48,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-6RfO_6Y-6IiZ_CcU-50ky/',
 	},
 },
 {
@@ -675,6 +687,61 @@ const arrListPcMbCpuRam = [
 		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-67F_6Y-6IiZ_CcU-50ky/',
 	},
 },
+
+
+
+
+// DDR5 --- 5200 ---
+{
+	id: 'ddr5_128_5200', title: 'DDR-5 5200 МГц 128 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 128,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-2BPj_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_96_5200', title: 'DDR-5 5200 МГц 96 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 96,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-6RfT_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_64_5200', title: 'DDR-5 5200 МГц 64 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 64,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-1MoE_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_48_5200', title: 'DDR-5 5200 МГц 48 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 48,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-6RfO_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_32_5200', title: 'DDR-5 5200 МГц 32 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 32,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-FVy_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_16_5200', title: 'DDR-5 5200 МГц 16 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 16,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-677_6Y-6D0s_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_8_5200', title: 'DDR-5 5200 МГц 8 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _5200: 1, }, ram_val: 8,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-67F_6Y-6D0s_CcU-50ky/',
+	},
+},
+
 
 
 
