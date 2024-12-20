@@ -67,20 +67,15 @@ class ComponentWinMbCpuRam {
 		let html = `
 			<div class="cp-filters">
 
-				<select data-id="rate_memory" onchange="${ this.name }.change( this )">
-					<option value="all">--- MHz</option>
-					${ htmlOptionRateMemory }
-				</select>
-
-
 				<select data-id="socket" onchange="${ this.name }.change( this )">
 					<option value="all">--- Socket</option>
 					${ htmlOptionSocket }
 				</select>
 
-
-
-
+				<select data-id="rate_memory" onchange="${ this.name }.change( this )">
+					<option value="all">--- MHz</option>
+					${ htmlOptionRateMemory }
+				</select>
 			</div>
 
 			<div class="list">${ htmlList }</div>
