@@ -25,57 +25,56 @@ s1151
 
 
 	// сокет MB, CPU
-	{ id: 'amd4' 						, title: 'AMD AM4 (1331)' 			, }, // Socket AM4 	// Zen / Zen+ / Zen2 / Zen3
-	{ id: 'amd5' 						, title: 'AMD AM5 (1718)' 			, }, // Socket AM5  // Zen4
-
-
-
-	{ id: 'i1151' 						, title: 'Intel (1151)' 			, }, // Socket H4 	// CoffeeLake
-	{ id: 'i1200' 						, title: 'Intel (1200)' 			, }, // Socket H5 	// CometLake / RocketLake
-	{ id: 'i1700' 						, title: 'Intel (1700)' 			, }, // Socket V 	// AlderLake / RaptorLake
-	{ id: 'i1851' 						, title: 'Intel (1851)' 			, }, // Socket V1 	// ArrowLake
-	{ id: 'i2551' 						, title: 'Intel (2551)' 			, }, // ???
-
-
+	{ id: 'amd4' 		, title: 'AMD AM4 (1331)' 		, }, // Socket AM4 	// Zen / Zen+ / Zen2 / Zen3
+	{ id: 'amd5' 		, title: 'AMD AM5 (1718)' 		, }, // Socket AM5  // Zen4
+	
+	{ id: 'i1151' 		, title: 'Intel (1151)' 		, }, // Socket H4 	// CoffeeLake
+	{ id: 'i1200' 		, title: 'Intel (1200)' 		, }, // Socket H5 	// CometLake / RocketLake
+	{ id: 'i1700' 		, title: 'Intel (1700)' 		, }, // Socket V 	// AlderLake / RaptorLake
+	{ id: 'i1851' 		, title: 'Intel (1851)' 		, }, // Socket V1 	// ArrowLake
+	{ id: 'i2551' 		, title: 'Intel (2551)' 		, }, // ???
 
 
 
 	// ядро CPU
-	{ id: 'alder_lake_s' 				, title: 'Alder Lake-S' 				, }, // Intel 12
-	{ id: 'arrow_lake_s' 				, title: 'Arrow Lake-S' 				, }, // Ultra 5
-	{ id: 'coffee_lake' 				, title: 'Coffee Lake' 					, }, 
-	{ id: 'granite_ridge' 				, title: 'Granite Ridge' 				, }, 
-	{ id: 'phoenix' 					, title: 'Phoenix' 						, }, 
-	{ id: 'raptor_lake_r' 				, title: 'Raptor Lake-R' 				, }, // Intel 13
-	{ id: 'raptor_lake_s' 				, title: 'Raptor Lake-S' 				, }, // Intel 13
-	{ id: 'raphael' 					, title: 'Raphael' 						, }, 
-	{ id: 'zen5' 						, title: 'Zen 5' 						, }, 
-
+	{ id: 'alder_lake_s' 		, title: 'Alder Lake-S' 		, }, // Intel 12
+	{ id: 'arrow_lake_s' 		, title: 'Arrow Lake-S' 		, }, // Ultra 5
+	{ id: 'coffee_lake' 		, title: 'Coffee Lake' 			, }, 
+	{ id: 'granite_ridge' 		, title: 'Granite Ridge' 		, }, 
+	{ id: 'phoenix' 			, title: 'Phoenix' 				, }, 
+	{ id: 'raptor_lake_r' 		, title: 'Raptor Lake-R' 		, }, // Intel 13
+	{ id: 'raptor_lake_s' 		, title: 'Raptor Lake-S' 		, }, // Intel 13
+	{ id: 'raphael' 			, title: 'Raphael' 				, }, 
+	{ id: 'zen5' 				, title: 'Zen 5' 				, }, 
 
 
 
 	// відеоядро CPU
-	{ id: 'amd_radeon_610m' 			, title: 'AMD Radeon 610M' 				, },
-	{ id: 'amd_radeon_660m' 			, title: 'AMD Radeon 660M' 				, },
-	{ id: 'amd_radeon_680m' 			, title: 'AMD Radeon 680M' 				, },
-	{ id: 'amd_radeon_740m' 			, title: 'AMD Radeon 740M' 				, },
-	{ id: 'amd_radeon_760m' 			, title: 'AMD Radeon 760M' 				, },
-	{ id: 'amd_radeon_780m' 			, title: 'AMD Radeon 780M' 				, },
-	{ id: 'amd_radeon_graphics' 		, title: 'AMD Radeon Graphics' 			, },
-	{ id: 'intel_uhd_graphics_630' 		, title: 'Intel UHD Graphics 630' 		, },
-	{ id: 'intel_uhd_graphics_730' 		, title: 'Intel UHD Graphics 730' 		, },
-	{ id: 'intel_uhd_graphics_750' 		, title: 'Intel UHD Graphics 750' 		, },
-	{ id: 'intel_uhd_graphics_770' 		, title: 'Intel UHD Graphics 770' 		, },
+	{ id: 'amd_610m' 				, title: 'AMD Radeon 610M' 				, },
+	{ id: 'amd_660m' 				, title: 'AMD Radeon 660M' 				, },
+	{ id: 'amd_680m' 				, title: 'AMD Radeon 680M' 				, },
+	{ id: 'amd_740m' 				, title: 'AMD Radeon 740M' 				, },
+	{ id: 'amd_760m' 				, title: 'AMD Radeon 760M' 				, },
+	{ id: 'amd_780m' 				, title: 'AMD Radeon 780M' 				, },
+	{ id: 'amd_radeon_graphics' 	, title: 'AMD Radeon Graphics' 			, },
+
+	{ id: 'intel_4_xe' 				, title: 'Intel Graphics 4 Xe' 			, },
+	{ id: 'intel_uhd_630' 			, title: 'Intel UHD Graphics 630' 		, },
+	{ id: 'intel_uhd_730' 			, title: 'Intel UHD Graphics 730' 		, },
+	{ id: 'intel_uhd_750' 			, title: 'Intel UHD Graphics 750' 		, },
+	{ id: 'intel_uhd_770' 			, title: 'Intel UHD Graphics 770' 		, },
+
+
 
 	// чіпсет MB
-	{ id: 'b760' 						, title: 'Intel B760' 					, },
-	{ id: 'h610' 						, title: 'Intel H610' 					, }, 
-	{ id: 'z370' 						, title: 'Intel Z370' 					, }, 
-	{ id: 'z790' 						, title: 'Intel Z790' 					, }, 
+	{ id: 'b760' 		, title: 'Intel B760' 		, },
+	{ id: 'h610' 		, title: 'Intel H610' 		, }, 
+	{ id: 'z370' 		, title: 'Intel Z370' 		, }, 
+	{ id: 'z790' 		, title: 'Intel Z790' 		, }, 
 
 	// ram
-	{ id: 'ddr4' 						, title: 'DDDR-4' 						, },
-	{ id: 'ddr5' 						, title: 'DDDR-5' 						, },
+	{ id: 'ddr4' 		, title: 'DDDR-4' 			, },
+	{ id: 'ddr5' 		, title: 'DDDR-5' 			, },
 	
 ];
 
@@ -121,21 +120,11 @@ const arrListPcMbCpuRam = [
 // 6400 MHz ---
 {
 	id: 'z890_5600', title: 'Intel Z890 6400 MHz', cat: 'mb', 
-
 	socket: 'i1851', chipset: 'z890', ram_type: 'ddr5', rate_memory: { _6400: 1, },
-
 	site: {
 		elmir: 'https://elmir.ua/ua/motherboards/_5d-6dWT_5m-6rXI_6K-6D1N_4FC-6rXH/?orderby=cost&orderdir=asc',
 	},
 },
-
-
-
-
-
-
-
-
 
 
 
@@ -168,6 +157,7 @@ const arrListPcMbCpuRam = [
 		elmir: 'https://elmir.ua/ua/motherboards/_5d-6D1L_5m-6PXA_6K-6D1N_4FC-6Phx/?orderby=cost&orderdir=asc',
 	},
 },
+
 
 
 // 4800 MHz ---
@@ -223,7 +213,6 @@ const arrListPcMbCpuRam = [
 
 
 
-
 // 2666 MHz ---
 {
 	id: 'z370', title: 'Intel Z370 2666 MHz', cat: 'mb', 
@@ -236,7 +225,7 @@ const arrListPcMbCpuRam = [
 
 
 
-
+// MotherBoard AMD ---
 // 5600 MHz ---
 {
 	id: 'x870_5600', title: 'AMD X870 5600 MHz', cat: 'mb', 
@@ -299,6 +288,23 @@ const arrListPcMbCpuRam = [
 
 
 
+
+
+
+// Ultra 9 ---
+{
+	id: 'bx_80768285_k', title: 'Intel Core Ultra 9 285K', code: 'BX80768285K', cat: 'cpu', 
+	socket: 'i1851', core: 'arrow_lake_s', cores: 24, 
+	cpu_rate: 3.7, rate_memory: { _6400: 1, },
+	cache1: 0, cache2: 0, cache3: 36,
+	site: {
+		elmir: '',
+		rozetka 	: 'https://hard.rozetka.com.ua/ua/intel-bx80768285k/p454459724/',
+	},
+},
+
+
+
 // Ultra 7 ---
 {
 	id: 'bx_80768265_k', title: 'Intel Core Ultra 7 265K', code: 'BX80768265K', cat: 'cpu', 
@@ -312,35 +318,17 @@ const arrListPcMbCpuRam = [
 
 
 
-
 // Ultra 5 ---
-
-/*
 {
-	id: 'bx_80768245_kf', title: 'Intel Core Ultra 5 245KF s-1851 GPU: ', code: 'BX80768245KF', cat: 'cpu', 
+	id: 'bx_80768245_kf', title: 'Intel Core Ultra 5 245KF', code: 'BX80768245KF', cat: 'cpu', 
 	socket: 'i1851', core: 'arrow_lake_s', cores: 14, 
 	cpu_rate: 4.2, rate_memory: { _6400: 1, },
 	cache1: 0, cache2: 26, cache3: 24,
+	gpu: '4 Xe',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor-intel-core-ultra-5-245kf-s-1851-4-2ghz-24mb-box-bx80768245kf.html',
 	},
 },
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -351,7 +339,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_r', cores: 24, 
 	cpu_rate: 2.0, rate_memory: { _5600: 1, },
 	cache1: 0, cache2: 32, cache3: 36,
-	gpu: 'intel_uhd_graphics_770',
+	gpu: 'intel_uhd_770',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i9-14900_s-1700_5_8ghz_36mb_box_bx8071514900.html',
 	},
@@ -365,7 +353,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_r', cores: 20, 
 	cpu_rate: 2.1, rate_memory: { _5600: 1, },
 	cache1: 1.792, cache2: 20, cache3: 33,
-	gpu: 'intel_uhd_graphics_770',
+	gpu: 'intel_uhd_770',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i7-14700_s-1700_5_4ghz_33mb_box_bx8071514700.html',
 	},
@@ -375,7 +363,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 16, 
 	cpu_rate: 2.1, rate_memory: { _5600: 1, },
 	cache1: 0.64, cache2: 16, cache3: 30,
-	gpu: 'intel_uhd_graphics_770', 
+	gpu: 'intel_uhd_770', 
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i7-13700_s-1700_2_1ghz_30mb_box_bx8071513700.html',
 	},
@@ -396,7 +384,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 14, 
 	cpu_rate: 3.5, rate_memory: { _5600: 1, },
 	cache1: 1.248, cache2: 20, cache3: 24,
-	gpu: 'intel_uhd_graphics_770', 
+	gpu: 'intel_uhd_770', 
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-14600k_s-1700_3_5ghz_24mb_box_bx8071514600k.html',
 	},
@@ -406,7 +394,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_r', cores: 14, 
 	cpu_rate: 1.9, rate_memory: { _4800: 1, },
 	cache1: 0, cache2: 0, cache3: 24,
-	gpu: 'intel_uhd_graphics_770', 
+	gpu: 'intel_uhd_770', 
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-14500_s-1700_5_0ghz_24mb_box_bx8071514500.html',
 	},
@@ -416,7 +404,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 14, 
 	cpu_rate: 3.5, rate_memory: { _5600: 1, },
 	cache1: 0.48, cache2: 20, cache3: 24,
-	gpu: 'intel_uhd_graphics_770', 
+	gpu: 'intel_uhd_770', 
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-13600k_s-1700_3_5ghz_24mb_box_bx8071513600k.html',
 	},
@@ -426,7 +414,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 14, 
 	cpu_rate: 2.5, rate_memory: { _4800: 1, },
 	cache1: 0.48, cache2: 7.5, cache3: 24,
-	gpu: 'intel_uhd_graphics_770',
+	gpu: 'intel_uhd_770',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-13500_s-1700_2_5ghz_24mb_box_bx8071513500.html',
 	},
@@ -436,7 +424,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 10, 
 	cpu_rate: 2.5, rate_memory: { _4800: 1, },
 	cache1: 0, cache2: 9.5, cache3: 20,
-	gpu: 'intel_uhd_graphics_730',
+	gpu: 'intel_uhd_730',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-13400_s-1700_2_5ghz_20mb_box_bx8071513400.html',
 	},
@@ -446,7 +434,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'alder_lake_s', cores: 6, 
 	cpu_rate: 3.0, rate_memory: { _4800: 1, },
 	cache1: 0.48, cache2: 7.5, cache3: 18,
-	gpu: 'intel_uhd_graphics_770',
+	gpu: 'intel_uhd_770',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-12500_s-1700_3_0ghz_18mb_box_bx8071512500.html',
 	},
@@ -456,7 +444,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'alder_lake_s', cores: 6, 
 	cpu_rate: 2.5, rate_memory: { _4800: 1, },
 	cache1: 0, cache2: 7.5, cache3: 18,
-	gpu: 'intel_uhd_graphics_730',
+	gpu: 'intel_uhd_730',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i5-12400_s-1700_2_5ghz_18mb_box_bx8071512400.html',
 	},
@@ -470,7 +458,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_r', cores: 4, 
 	cpu_rate: 3.5, rate_memory: { _4800: 1, },
 	cache1: 0.32, cache2: 5, cache3: 12,
-	gpu: 'intel_uhd_graphics_730',
+	gpu: 'intel_uhd_730',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i3-14100_s-1700_4_7ghz_12mb_box_bx8071514100.html',
 	},
@@ -480,7 +468,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'raptor_lake_s', cores: 4, 
 	cpu_rate: 3.4, rate_memory: { _4800: 1, },
 	cache1: 0, cache2: 5, cache3: 12,
-	gpu: 'intel_uhd_graphics_730',
+	gpu: 'intel_uhd_730',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i3-13100_s-1700_3_4ghz_12mb_box_bx8071513100.html',
 	},
@@ -490,7 +478,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1700', core: 'alder_lake_s', cores: 4, 
 	cpu_rate: 3.3, rate_memory: { _4800: 1, },
 	cache1: 0, cache2: 5, cache3: 12,
-	gpu: 'intel_uhd_graphics_730',
+	gpu: 'intel_uhd_730',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i3-12100_s-1700_3_3ghz_12mb_box_bx8071512100.html',
 	},
@@ -500,7 +488,7 @@ const arrListPcMbCpuRam = [
 	socket: 'i1151', core: 'coffee_lake', cores: 4, 
 	cpu_rate: 3.6, rate_memory: { _2400: 1, },
 	cache1: 0.256, cache2: 1, cache3: 6,
-	gpu: 'intel_uhd_graphics_630',
+	gpu: 'intel_uhd_630',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_intel_core_i3-8100_s-1151_3_6ghz_6mb_box_bx80684i38100.html',
 	},
@@ -606,7 +594,7 @@ const arrListPcMbCpuRam = [
 	socket: 'amd5', core: 'raphael', cores: 8,
 	cpu_rate: 4.2, rate_memory: { _5200: 1, },
 	cache1: 0.512, cache2: 8, cache3: 16,
-	gpu: 'amd_radeon_780m',
+	gpu: 'amd_780m',
 	site: {
 		elmir: 'https://elmir.ua/ua/processors/processor_amd_ryzen_7_8700g_s-am5_5_1ghz_16mb_box_100-100001236box.html',
 	},
@@ -706,6 +694,54 @@ const arrListPcMbCpuRam = [
 
 
 // Оперативна пам'ять --------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+// DDR5 --- 6400 ---
+{
+	id: 'ddr5_96_6400', title: 'DDR-5 6400 МГц 96 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 96,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-6RfT_6Y-6Nk7_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_64_6400', title: 'DDR-5 6400 МГц 64 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 64,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-1MoE_6Y-6Nk7_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_48_6400', title: 'DDR-5 6400 МГц 48 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 48,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-6RfO_6Y-6Nk7_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_32_6400', title: 'DDR-5 6400 МГц 32 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 32,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-FVy_6Y-6Nk7_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_24_6400', title: 'DDR-5 6400 МГц 24 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 24,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-678_6Y-6Nk7_CcU-50ky/',
+	},
+},
+{
+	id: 'ddr5_16_6400', title: 'DDR-5 6400 МГц 16 ГБ', cat: 'ram', 
+	ram_type: 'ddr5', rate_memory: { _6400: 1, }, ram_val: 16,
+	site: {
+		elmir: 'https://elmir.ua/ua/memory_modules/_6R-6D0t_6S-677_6Y-6Nk7_CcU-50ky/',
+	},
+},
 
 
 
