@@ -129,7 +129,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4090', title: 'GeForce RTX 4090', chip: 'nvidia',
 	bit: 384, rate: 21000, ram: 24, type: 'gddr6x', resolution: '7680x4320 ( 8K )',
 	site: {
-		elmir 		: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204090',
+		elmir 		: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6P4Q/?orderby=cost&orderdir=asc',
 		rozetka 	: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-rtx-4090/',
 		pcshop 		: 'https://pcshop.ua/komplektuyuschie/videocards/graficheskij-chip_1/geforce-rtx-4090_1?sort=p.price&order=ASC',
 		stylus 		: 'https://stylus.ua/uk/videokarty/chip:geforce-rtx-4090/?s=price_asc',			
@@ -194,16 +194,14 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4080_super', title: 'GeForce RTX 4080 Super', chip: 'nvidia',
 	bit: 256, rate: 23000, ram: 16, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204080%20Super',
-		rozetka: '',
-		pcshop: '',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6akW/?orderby=cost&orderdir=asc',
 	},
 },
 {
 	id: 'geforce_rtx_4080', title: 'GeForce RTX 4080', chip: 'nvidia',
 	bit: 256, rate: 22400, ram: 16, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204080',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6PLq/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -212,7 +210,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4070_ti_super', title: 'GeForce RTX 4070 Ti Super', chip: 'nvidia',
 	bit: 256, rate: 21000, ram: 16, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204070%20Ti%20Super',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6akV/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -269,7 +267,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4070_ti', title: 'GeForce RTX 4070 Ti', chip: 'nvidia',
 	bit: 192, rate: 21000, ram: 12, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204070%20Ti',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6PlM/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -278,7 +276,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4070_super', title: 'GeForce RTX 4070 Super', chip: 'nvidia',
 	bit: 192, rate: 21000, ram: 12, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204070%20Super',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6akX/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -287,7 +285,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4070', title: 'GeForce RTX 4070', chip: 'nvidia',
 	bit: 192, rate: 21000, ram: 12, type: 'gddr6x',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204070',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6RVR/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -314,7 +312,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_3060_ti', title: 'GeForce RTX 3060 Ti', chip: 'nvidia',
 	bit: 256, rate: 14000, ram: 8, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%203060%20Ti',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-5vfb/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -365,7 +363,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_3060', title: 'GeForce RTX 3060', chip: 'nvidia',
 	bit: 192, rate: 15000, ram: 12, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%203060',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-5vfc/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -374,7 +372,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_2060', title: 'GeForce RTX 2060', chip: 'nvidia',
 	bit: 192, rate: 14000, ram: 6, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%202060',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-595R/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -383,7 +381,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_gtx_1660_super', title: 'GeForce GTX 1660 Super', chip: 'nvidia',
 	bit: 192, rate: 14000, ram: 6, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/video_cards/_4Ee-5Gc1/?orderby=cost&orderdir=asc',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-5Gc1/?orderby=cost&orderdir=asc',
 		rozetka: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-gtx-1660-super/', //
 		pcshop: '',
 	},
@@ -392,7 +390,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4060_ti', title: 'GeForce RTX 4060 Ti', chip: 'nvidia',
 	bit: 128, rate: 18000, ram: 8, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204060%20Ti',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6Rsq/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -401,7 +399,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_gtx_1660_ti', title: 'GeForce GTX 1660 Ti', chip: 'nvidia',
 	bit: 192, rate: 12000, ram: 6, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/video_cards/_4Ee-5A32/?orderby=cost&orderdir=asc',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-5A32/?orderby=cost&orderdir=asc',
 		rozetka: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-gtx-1660-ti/',
 		pcshop: '',
 	},
@@ -433,7 +431,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_4060', title: 'GeForce RTX 4060', chip: 'nvidia',
 	bit: 128, rate: 17000, ram: 8, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%204060',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6Rsr/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -452,7 +450,7 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_rtx_3050', title: 'GeForce RTX 3050', chip: 'nvidia',
 	bit: 128, rate: 14000, ram: 8, type: 'gddr6',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20RTX%203050',
+		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6JdB/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
 	},
@@ -477,18 +475,9 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_gtx_1660', title: 'GeForce GTX 1660', chip: 'nvidia',
 	bit: 192, rate: 8000, ram: 6, type: 'gddr5',
 	site: {
-		elmir: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20GTX%201660',
+		elmir: '',
 		rozetka: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-gtx-1660/',
 		pcshop: '',
-	},
-},
-{
-	id: 'geforce_gtx_1650_2', title: 'GeForce GTX 1650 rev.2', chip: 'nvidia',
-	bit: 128, rate: 12000, ram: 4, type: 'gddr6', resolution: '7680x4320 ( 8K )',
-	site: {
-		elmir: 'https://elmir.ua/ua/video_cards/_4Ee-5BoR/?orderby=cost&orderdir=asc',
-		rozetka: 'https://hard.rozetka.com.ua/ua/videocards/c80087/sort=cheap;21330=geforce-gtx-1650/',
-		pcshop: 'https://pcshop.ua/komplektuyuschie/videocards/graficheskij-chip_1/geforce-gtx-1650_1?sort=p.price&order=ASC',
 	},
 },
 {
@@ -502,13 +491,11 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	id: 'geforce_gtx_1650', title: 'GeForce GTX 1650', chip: 'nvidia',
 	bit: 128, rate: 8000, ram: 4, type: 'gddr5', resolution: '7680x4320 ( 8K )',
 	site: {
-		elmir 		: 'https://elmir.ua/ua/?orderby=cost&orderdir=asc&q=GeForce%20GTX%201650',
+		elmir 		: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-5BoR/?orderby=cost&orderdir=asc',
 		rozetka 	: '',
 		pcshop 		: '',
 	},
 },
-
-
 {
 	id: 'geforce_8800_gt', title: 'GeForce 8800 GT', chip: 'nvidia', // code: 'ZT-88TES3P-FCP',
 	bit: 256, rate: 1800, ram: 0.512, type: 'gddr3',

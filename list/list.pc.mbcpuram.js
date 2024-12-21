@@ -1,10 +1,10 @@
 //const arrRateMemory = [ 5600, 5200, 4800, 2666, 2400, 2133, 1333 ];
-const arrRateMemory = [ 5600, 5200, 4800, ];
+const arrRateMemory = [ 6400, 5600, 5200, 4800, ];
 
 
 
 //const arrSocket = [ 'i1851', 'i1700', 'i1200', 'i1151', 'amd5', 'amd4', ];
-const arrSocket = [ 'i1700', 'amd5', ];
+const arrSocket = [ 'i1851', 'i1700', 'amd5', ];
 
 
 
@@ -42,6 +42,7 @@ s1151
 
 	// ядро CPU
 	{ id: 'alder_lake_s' 				, title: 'Alder Lake-S' 				, }, // Intel 12
+	{ id: 'arrow_lake_s' 				, title: 'Arrow Lake-S' 				, }, // Ultra 5
 	{ id: 'coffee_lake' 				, title: 'Coffee Lake' 					, }, 
 	{ id: 'granite_ridge' 				, title: 'Granite Ridge' 				, }, 
 	{ id: 'phoenix' 					, title: 'Phoenix' 						, }, 
@@ -108,6 +109,31 @@ const arrListPcMbCpuRam = [
 
 
 // Материнськы плати  --------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+// 6400 MHz ---
+{
+	id: 'z890_5600', title: 'Intel Z890 6400 MHz', cat: 'mb', 
+
+	socket: 'i1851', chipset: 'z890', ram_type: 'ddr5', rate_memory: { _6400: 1, },
+
+	site: {
+		elmir: 'https://elmir.ua/ua/motherboards/_5d-6dWT_5m-6rXI_6K-6D1N_4FC-6rXH/?orderby=cost&orderdir=asc',
+	},
+},
+
+
+
+
+
+
 
 
 
@@ -270,6 +296,52 @@ const arrListPcMbCpuRam = [
 
 
 // Процесори --------------------------------------------------------------------------------------------------------------
+
+
+
+// Ultra 7 ---
+{
+	id: 'bx_80768265_k', title: 'Intel Core Ultra 7 265K', code: 'BX80768265K', cat: 'cpu', 
+	socket: 'i1851', core: 'arrow_lake_s', cores: 20, 
+	cpu_rate: 3.9, rate_memory: { _6400: 1, },
+	cache1: 0, cache2: 36, cache3: 30,
+	site: {
+		elmir: 'https://elmir.ua/ua/processors/processor-intel-core-ultra-7-265k-s-1851-3-9ghz-30mb-box-bx80768265k.html',
+	},
+},
+
+
+
+
+// Ultra 5 ---
+
+/*
+{
+	id: 'bx_80768245_kf', title: 'Intel Core Ultra 5 245KF s-1851 GPU: ', code: 'BX80768245KF', cat: 'cpu', 
+	socket: 'i1851', core: 'arrow_lake_s', cores: 14, 
+	cpu_rate: 4.2, rate_memory: { _6400: 1, },
+	cache1: 0, cache2: 26, cache3: 24,
+	site: {
+		elmir: 'https://elmir.ua/ua/processors/processor-intel-core-ultra-5-245kf-s-1851-4-2ghz-24mb-box-bx80768245kf.html',
+	},
+},
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

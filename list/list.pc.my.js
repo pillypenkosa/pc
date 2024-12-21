@@ -109,6 +109,33 @@ const arrListPcMy = [
 	},
 
 
+	{
+		title: 'Монітор',
+		keyval: [
+			{ k: 'Назва' 				, v: 'Samsung ', },
+			{ k: 'Модель' 				, v: 'S32D700EAI (LS32D700EAIXCI)', },
+			{ k: 's/n' 					, v: '8806095545035, 0UYNHNBX900040', },
+			{ k: 'Розширення' 			, v: '3840x2160', },
+			{ k: 'Частота' 				, v: '60 Гц', },
+			{ k: 'Матриця' 				, v: 'VA', },
+			{ k: 'Співвідношення' 		, v: '16:9', },
+			{ k: 'Час реакції' 			, v: '5 мс', },
+			{ k: 'HDMI' 				, v: '2.0', },
+		],
+		site: [ 
+			{ title: 'www.elmir.ua' 		, href: 'https://elmir.ua/ua/monitors/monitor-32-samsung-s32d700eai-ls32d700eaixci.html', },
+		],
+	},
+
+
+
+
+
+
+
+
+
+
 
 
 
