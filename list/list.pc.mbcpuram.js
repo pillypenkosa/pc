@@ -10,6 +10,8 @@ const arrSocket = [ 'i1851', 'i1700', 'amd5', ];
 
 
 
+
+
 const arrPartsCode = [
 
 	// BGA - Ball Grid Array

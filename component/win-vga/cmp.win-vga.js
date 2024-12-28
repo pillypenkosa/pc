@@ -102,17 +102,12 @@ class ComponentWinVga {
 
 
 
-
 		let htmlOptionRam = '';
 		if ( arrVGAram ) {
 
 			let timeCountRam = {};
 
-
-
 			//arrVGAram.sort(()=>1); // не сортується в цілому виразі ( як вище з іншими масивами )
-
-
 			//arrVGAram.sort( compare );
 			arrVGAram.sort( compare ).forEach( k => {
 
@@ -125,14 +120,7 @@ class ComponentWinVga {
 
 			//console.log( 'arrVGAram: ', arrVGAram );
 			//console.log( 'arrVGAram: ', arrVGAram );
-
-
-
 		}
-
-
-
-
 
 
 
@@ -154,8 +142,12 @@ class ComponentWinVga {
 
 
 
-
-
+		let htmlOptionSeria = '';
+		if ( arrVgaSeria ) {
+			arrVgaSeria.forEach( k => {
+				htmlOptionSeria += `<option value="${ k.id }">${ k .title }</option>`;
+			});
+		}
 
 
 
@@ -166,6 +158,11 @@ class ComponentWinVga {
 
 		let html = `
 			<div class="cp-filters">
+
+				<select data-id="seria" onchange="${ this.name }.change( this )">
+					<option value="all">--- Серія</option>
+					${ htmlOptionSeria }
+				</select>
 
 				<select data-id="chip" onchange="${ this.name }.change( this )">
 					<option value="all">--- чіп</option>
@@ -206,6 +203,16 @@ class ComponentWinVga {
  
 
 
+	static filterKey = {
+
+		seria 	: 'all',
+		chip 	: 'all',
+		bit 	: 'all',
+		rate 	: 'all',
+		ram 	: 'all',
+		type 	: 'all',
+	};
+
 
 
 	static change( elem ) { 	// data - txt 
@@ -216,27 +223,12 @@ class ComponentWinVga {
 		//console.log( elem.dataset.id );
 		//console.log( elem.value );
 
-
 		this.filterKey[ elem.dataset.id ] = elem.value;
 
 		//console.log( this.filterKey );
 
 		this.filter();
 	}
-
-
- 
-
-
-	static filterKey = {
-
-		chip 	: 'all',
-		bit 	: 'all',
-		rate 	: 'all',
-		ram 	: 'all',
-		type 	: 'all',
-	};
-
 
 
 
@@ -250,6 +242,16 @@ class ComponentWinVga {
 
 
 		if ( this.filterKey ) {
+
+			if ( this.filterKey.seria != 'all' ) {
+
+				arrSelected = arrSelected.filter( k => {
+
+					if ( k.seria == this.filterKey.seria ) 
+						return true;
+				});
+			}
+
 
 			if ( this.filterKey.chip != 'all' ) {
 

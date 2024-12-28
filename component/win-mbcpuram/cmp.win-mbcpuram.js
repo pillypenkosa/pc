@@ -47,7 +47,7 @@ class ComponentWinMbCpuRam {
 	
 
 		let htmlOptionRateMemory = '';
-		if ( arrRateMemory ) {
+		if ( arrRateMemory ) { 					// list.pc.mbcpuram.js
 			arrRateMemory.forEach( k => {
 				htmlOptionRateMemory += `<option value="_${ k }">${ k }</option>`;
 			});
@@ -55,12 +55,11 @@ class ComponentWinMbCpuRam {
 
 
 		let htmlOptionSocket = '';
-		if ( arrSocket ) {
+		if ( arrSocket ) { 					// list.pc.mbcpuram.js
 			arrSocket.forEach( k => {
 				htmlOptionSocket += `<option value="${ k }">${ objPartsCode[ k ].title }</option>`;
 			});
 		}
-
 
 
 
