@@ -130,6 +130,33 @@ const arrListPcMy = [
 
 
 
+	{
+		title: 'Ноутбук',
+		keyval: [
+
+			{ k: 'Модель' 				, v: 'Lenovo Ideapad 320-15 IKB (80XL03WBRA)', },
+
+			//{ k: 'MTM' 					, v: '80XL03WBRA', }, 	// MTM - Machine Type Model
+
+			{ k: 'CPU' 					, v: 'Intel Core i3-7130U 4x2.7 GHz (7-е Kaby Lake)', },
+			{ k: 'ОЗУ' 					, v: '8GB DDR4 2133 MHz', },
+
+			{ k: 'Дісплей' 				, v: '15.6 / 1920x1080', },
+			{ k: 'Відео' 				, v: 'Intel HD Graphic 620', },
+			{ k: 'Відео' 				, v: 'nVidia GeForce 640 MX (2 GB)', },
+
+			{ k: 'SSD' 					, v: '256 GB', },
+
+			{ k: 's/n' 					, v: 'PF10DUAV', },
+			{ k: 'BIOS' 				, v: 'F2', },
+		],
+
+		site: [ 
+			{ title: 'www.elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
+			{ title: 'www.rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/lenovo_80xl03wbra/p28306433/', },
+		],
+
+	},
 
 
 
