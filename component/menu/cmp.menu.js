@@ -20,12 +20,8 @@ class ComponentMenu {
 
 		{ title: 'Мій ПК' 			, id: 'my_pc' 					, href: '?my-pc'		},
 		{ title: 'Відеокарти' 		, id: 'vga' 					, href: '?vga'			},
-
-
 		{ title: 'MB,CPU,RAM' 		, id: 'mbcpuram' 				, href: '?mbcpuram'		},
-
-
-
+		{ title: 'Windows 10' 		, id: 'windows_10' 				, href: '?windows-10'	},
 
 
 

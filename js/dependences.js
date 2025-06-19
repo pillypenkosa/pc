@@ -17,10 +17,11 @@ const dependences = [
 
 	// масиви-списки з ЦЬОГО проекту ( свої ) -------------------------------------------------------------------------------------
 
+
+	{ arr: 'pc.win10set' 		, },
 	{ arr: 'pc.mbcpuram' 		, },
 	{ arr: 'pc.vga' 			, },
 	{ arr: 'pc.my' 				, },
-
 
 
 
@@ -60,9 +61,10 @@ const dependences = [
 	
 
 
+	{ cmp: 'Win-10-set' 			, regexp: /^windows-10/ 				, },
 
 
-	{ cmp: 'Win-MbCpuRam' 			, regexp: /^mbcpuram/ 				, },
+	{ cmp: 'Win-MbCpuRam' 			, regexp: /^mbcpuram/ 					, },
 
 	{ cmp: 'Win-Vga' 				, regexp: /^vga/ 						, },
 	{ cmp: 'Win-MyPc' 				, regexp: /^my-pc/ 						, },

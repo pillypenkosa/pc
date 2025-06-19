@@ -1,0 +1,41 @@
+cmp-win-10-set {
+
+
+	all: revert;
+
+} 
+
+
+	cmp-win-10-set .each {
+		margin: 1px 0px 20px 0px;
+		color: #fff;
+
+
+	} 
+
+
+
+		cmp-win-10-set .each .title {
+			font-weight: bold;
+			font-size: 120%;
+		} 
+
+
+		cmp-win-10-set .each .steps .each {
+			all: revert;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
