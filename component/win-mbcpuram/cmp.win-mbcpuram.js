@@ -35,7 +35,7 @@ class ComponentWinMbCpuRam {
  
  
 		setMeta({ 
-			title 			: fooName, 
+			title 			: 'MB CPU RAM', 
 			description 	: 'Опис...', 
 			//image 		: '', 
 		}); 

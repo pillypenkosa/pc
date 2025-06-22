@@ -55,7 +55,7 @@ class ComponentWinIndex {
 
 
 		setMeta({
-			title 			: '',
+			title 			: 'PC',
 			description 	: '',
 			//keywords 		: 'Ключові слова...' + name,
 			image 			: '',
