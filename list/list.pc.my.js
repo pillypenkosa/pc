@@ -149,6 +149,15 @@ const arrListPcMy = [
 
 			{ k: 's/n' 					, v: 'PF10DUAV', },
 			{ k: 'BIOS' 				, v: 'F2', },
+
+
+			{ k: 'Блок живлення' 		, v: '--- --- ---', },
+			{ k: 'Model' 				, v: 'ADLX65CDGE2A', },
+			{ k: 'Input' 				, v: '100-240 V, 1.5 A, 50-60 Hz', },
+			{ k: 'Output' 				, v: '20 V, 3.25 A (65 Вт)', },
+
+
+
 		],
 
 		site: [ 
