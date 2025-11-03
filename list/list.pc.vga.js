@@ -22,6 +22,7 @@ const objTitleIDs = {
 	gddr7 		: 'GDDR-7',
 	gddr6x 		: 'GDDR-6X',
 	gddr6 		: 'GDDR-6',
+	gddr5x 		: 'GDDR-5X',
 	gddr5 		: 'GDDR-5',
 	gddr3 		: 'GDDR-3',
 	sdr 		: 'SDR',
@@ -460,6 +461,13 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	},
 },
 {
+	id: 'geforce_gtx_1080', title: 'GeForce GTX 1080', seria: 'gtx10', chip: 'nvidia', 
+	bit: 256, rate: 10000, ram: 8, type: 'gddr5x',
+	site: {
+		rozetka 		: 'https://hard.rozetka.com.ua/ua/videocards-asus-152451971/p550890423/',
+	},
+},
+{
 	id: 'geforce_rtx_4060_ti', title: 'GeForce RTX 4060 Ti', seria: 'rtx40', chip: 'nvidia',
 	bit: 128, rate: 18000, ram: 8, type: 'gddr6',
 	site: {
@@ -507,6 +515,14 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 		elmir: 'https://elmir.ua/ua/video_cards/_1AY-6Y7_4Ee-6Rsr/?orderby=cost&orderdir=asc',
 		rozetka: '',
 		pcshop: '',
+	},
+},
+{
+	id: 'geforce_gtx_1070', title: 'GeForce GTX 1070', seria: 'gtx10', chip: 'nvidia', 
+	bit: 256, rate: 8000, ram: 8, type: 'gddr5',
+	site: {
+		elmir 		: 'https://elmir.ua/ua/video_cards/graphics_card_asus_pci-e_geforce_gtx1070_8gb_ddr5_rog-strix-gtx1070-o8g-gaming.html',
+		rozetka 	: 'https://hard.rozetka.com.ua/ua/450631970/p450631970/',
 	},
 },
 {
@@ -577,6 +593,13 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 	},
 },
 {
+	id: 'geforce_gtx_1050', title: 'GeForce GTX 1050', seria: 'gtx10', chip: 'nvidia', 
+	bit: 128, rate: 7000, ram: 2, type: 'gddr5',
+	site: {
+		rozetka 	: 'https://hard.rozetka.com.ua/ua/533585224/p533585224/',
+	},
+},
+{
 	id: 'geforce_8800_gt', title: 'GeForce 8800 GT', chip: 'nvidia', // code: 'ZT-88TES3P-FCP',
 	bit: 256, rate: 1800, ram: 0.512, type: 'gddr3',
 	site: {
@@ -615,6 +638,12 @@ geforce-rtx-4090 							- чіп ( GeForce RTX 4090 )
 		pcshop: '',
 	},
 },
+
+
+
+
+
+
 
 
 
