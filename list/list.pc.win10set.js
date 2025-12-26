@@ -5,6 +5,21 @@
 const arrListPcWin10set = [
 
 
+
+
+	{
+		title: 'Активація Windows 10 ',
+		steps: [
+
+			'CMD',
+			'...вводимо по черзі наступні команди ( після відпрацювання кожної команди має з\'являтися вікно з результатом виконання команди )',
+			'',
+			'slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX',
+			'slmgr /skms kms.digiboy.ir',
+			'slmgr /ato',
+		],
+	},
+
 	{
 		title: 'Активація Windows 10 ( KMSAuto-Net-1.5.4 )',
 		steps: [
