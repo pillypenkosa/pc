@@ -32,7 +32,7 @@ class ComponentFooter {
 		};
 
 		let html = `
-			<div class="copyright">© 2024 pillypenkosa@gmail.com</div>
+			<div class="copyright">© ${ Total.year } pillypenkosa@gmail.com</div>
 		`;
 
 
